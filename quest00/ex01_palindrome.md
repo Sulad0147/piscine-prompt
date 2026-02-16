@@ -1,55 +1,39 @@
-# PSUEDOCODE 
-FUNCTION is_palindrome_optimized(s):
-    left = 0
-    right = length(s) - 1
+def is_palindrome(txt):
+
+    cleaned_txt = txt.replace(" ", "").lower()
     
-    WHILE left < right:
-        
-        WHILE left < right AND NOT is_alphanumeric(s[left]):
-            left = left + 1
-        END WHILE
-        
-        
-        WHILE left < right AND NOT is_alphanumeric(s[right]):
-            right = right - 1
-        END WHILE
-        
-        
-        IF lowercase(s[left]) != lowercase(s[right]):
-            RETURN FALSE
-        END IF
-        
-        left = left + 1
-        right = right - 1
-    END WHILE
+    reverse = cleaned_txt[::-1]
+    
+    return reverse == cleaned_txt
+
+
+# Test cases
+print(is_palindrome("racecar"))  # True
+print(is_palindrome("hello"))     # False
+print(is_palindrome("A man a plan a canal panama"))  # True
+    
     
     RETURN TRUE
-END FUNCTION
  
 
  # PSUEDOCODE PYTHON IMPLEMENTATION WITH COMMENT
- def is_palindrome(s):
-    """
-    Checks if a string is a palindrome, ignoring case and non-alphanumeric characters.
-    """
-    # Step 1: Clean the string – keep only alphanumeric characters, convert to lowercase
-    clean = ""
-    for char in s:
-        if char.isalnum():               # Check if character is letter or number
-            clean += char.lower()        # Add lowercase version to clean string
+ def is_palindrome(txt):
+    # Clean the text: remove spaces and convert to lowercase
+    # This handles phrases with spaces and mixed case
+    cleaned_txt = txt.replace(" ", "").lower()
     
-    # Step 2: Two-pointer approach to compare characters from both ends
-    left = 0
-    right = len(clean) - 1
+    # Getting the reverse of cleaned text
+    reverse = cleaned_txt[::-1]
     
-    while left < right:
-        if clean[left] != clean[right]:  # If mismatch found, it's not a palindrome
-            return False
-        left += 1                        # Move pointers inward
-        right -= 1
-    
-    # Step 3: All characters matched
-    return True
+    # Check if the reversed text is equal to the cleaned text
+    return reverse == cleaned_txt
+
+
+# Test cases
+print(is_palindrome("racecar"))  # True
+print(is_palindrome("hello"))     # False
+print(is_palindrome("A man a plan a canal panama"))  # True
+
 
 # Test cases
 test_cases = ["racecar", "hello", "A man a plan a canal Panama"]
