@@ -20,9 +20,7 @@ def is_palindrome(txt):
     
     return True  # It's a palindrome
 # After your first attempt, ask AI:
-    Empty/whitespace strings: Your function would work but better to handle explicitly
-
-    Accented characters: Added Unicode normalization for characters like "café" → "cafe"
+    whitespace strings: my function would work but better to handle explicitly
 
     Non-English letters: .isalnum() works but normalization helps with special characters
 
