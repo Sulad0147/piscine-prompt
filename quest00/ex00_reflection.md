@@ -5,10 +5,10 @@ Do you usually try problems yourself first?
 Yes, i make a draft myself and I try to solve the logic
 
 Can you explain code you've submitted without AI's help?
-Yes. I can submit work I know very well.
+Yes. I can 
 
 What would happen if AI was unavailable during an exam or job test?
-I can complete it, though more slowly and with more effort.
+it will slow things a bit
 
 Identify your current pattern:
 Learner B: uses AI as a learning amplifier.
