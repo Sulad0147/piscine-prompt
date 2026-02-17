@@ -1,24 +1,16 @@
 # Modified palindrome function that meet Ignore spaces and punctuation,Be case-insensitive, Return the position where the string stops being a palindrome (if not one).
 def is_palindrome(txt):
-    # Remove spaces and punctuation, convert to lowercase
-    cleaned = []
-    original_indices = []  # Store original indices of kept characters
+    cleaned_txt = txt.replace(" ", "").lower()
+    reverse = cleaned_txt[::-1]  # Fixed: using the correct variable name
+    return reverse == cleaned_txt
+
+print(is_palindrome("racecar"))  # Output: True
+print(is_palindrome("hello"))
+print(is_palindrome("A man a plan a canal panama"))
+
+
+
     
-    for i, char in enumerate(txt):
-        if char.isalnum():  # Keep only alphanumeric characters
-            cleaned.append(char.lower())
-            original_indices.append(i)
-    
-    # Convert to string for easier comparison
-    cleaned_txt = ''.join(cleaned)
-    
-    # Check if it's a palindrome and find mismatch position
-    for i in range(len(cleaned_txt) // 2):
-        if cleaned_txt[i] != cleaned_txt[-(i + 1)]:
-            # Return the original position of the first mismatched character
-            return original_indices[i]
-    
-    return True  # It's a palindrome
 # After your first attempt, ask AI:
     whitespace strings: my function would work but better to handle explicitly
 
