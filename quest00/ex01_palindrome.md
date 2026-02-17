@@ -1,4 +1,5 @@
  # PSUEDOCODE 
+ ``` python 
  def is_palindrome(txt):
     # Clean the text: remove spaces and convert to lowercase
     # This handles phrases with spaces and mixed case
@@ -29,6 +30,7 @@ def is_palindrome(txt):
 print(is_palindrome("racecar"))  # Should print: True (reads same forwards and backwards)
 print(is_palindrome("hello"))     # Should print: False (hello reversed is olleh)
 print(is_palindrome("A man a plan a canal Panama"))  # Currently prints: False (due to spaces and case sensitivity)
+```
 
 # What I Learned From Solving It Before Asking AI:
 
