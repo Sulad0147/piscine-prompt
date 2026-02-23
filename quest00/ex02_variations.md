@@ -19,4 +19,4 @@ print(is_palindrome("A man a plan a canal panama"))
     Efficiency: Two-pointer approach is more memory-efficient than slicing
 
 # 3 Reflect on what AI added that i didn't consider initially
- This shows how easy it is to get locked into a particular solution pattern. The AI helped break that pattern by asking "What if we don't build the cleaned string at all?" - a question I should have asked myself during optimization.
+ This shows how easy it is to get locked into a particular solution pattern. The AI helped break that pattern by asking "What if we don't build the cleaned string at all?"  question I should have asked myself during optimization.
