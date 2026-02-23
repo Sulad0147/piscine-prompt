@@ -44,4 +44,4 @@ I can now see it as A filtering problem where irrelevant data (non-alphanumeric)
 
 # Could I Write Similar Functions Without Help Now?
 
-Absolutely yes. The pattern recognition is now readable for easy deburging 
+Absolutely yes. The pattern recognition is now readable for easy deburging and access
